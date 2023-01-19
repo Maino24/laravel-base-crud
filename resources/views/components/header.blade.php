@@ -7,13 +7,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="#">CHARACTERS</a>
+            <a class="nav-link active" href="">CHARACTERS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">COMICS</a>
+            <a class="nav-link" href="{{ route('comic.index') }}">COMICS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">MOVIES</a>
+            <a class="nav-link" href="">MOVIES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled">TV</a>
