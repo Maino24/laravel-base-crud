@@ -39,7 +39,7 @@
         </ul>
       </div>
     </div>
-  </nav>
-  <div class="imgBack">
+</nav>
+<div class="background-img">
 
-  </div>
+</div>
