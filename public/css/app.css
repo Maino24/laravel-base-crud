@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.containerHeader {
+  width: 70%;
+  margin: auto;
+  justify-content: space-around;
+}
+
 .background-img {
   background-image: url("/img/jumbotron.jpg");
   width: 100%;
