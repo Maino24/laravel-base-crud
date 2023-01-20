@@ -17,10 +17,10 @@ class CreateComicsTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->string('price');
+            $table->float('price');
             $table->string('thumb');
             $table->string('series');
-            $table->string('sale_date');
+            $table->date('sale_date');
             $table->string('type');
             $table->timestamps();
         });

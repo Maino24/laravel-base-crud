@@ -10,7 +10,7 @@
             <a class="nav-link active" href="">CHARACTERS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('comic.index') }}">COMICS</a>
+            <a class="nav-link" href="{{ route('comics.index') }}">COMICS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">MOVIES</a>
