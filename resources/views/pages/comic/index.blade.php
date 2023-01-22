@@ -27,7 +27,7 @@
                 <td>{{$elem->id}}</td>
                 <td>{{$elem->title}}</td>
                 <td>{{$elem->description}}</td>
-                <td>{{$elem->thumb}}</td>
+                <td><img src="{{$elem->thumb}}" alt=""></td>
                 <td>{{$elem->price}}</td>
                 <td>{{$elem->series}}</td>
                 <td>{{$elem->sale_date}}</td>
