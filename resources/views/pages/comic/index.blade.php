@@ -35,12 +35,22 @@
                     <td>{{$elem->series}}</td>
                     <td>{{$elem->sale_date}}</td>
                     <td>{{$elem->type}}</td>
-                <td>
+                <td class="">
 
                     <a href="{{route('comics.show', $elem->id)}}">
                     <p>INFO</p>
                     </a>
+
+
+                    <form action="{{route('comics.destroy', $elem->id)}}" method="POST">
+                        @method('DELETE')
+                        @csrf
+                        <button class="btn btn-primary" type="submit">
+                            <p>DELETE</p>
+                        </button>
+                    </form>
                 </td>
+
 
                 </tr>
 

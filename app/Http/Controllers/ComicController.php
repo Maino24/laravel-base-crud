@@ -43,7 +43,7 @@ class ComicController extends Controller
         $new_comic->fill($data);
         $new_comic->save();
 
-        return redirect()->route('comics.index');
+        return redirect()->route('comics.show', $new_comic->id);
     }
 
     /**
@@ -90,6 +90,9 @@ class ComicController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $comic = Comic::findOrFail($id);
+
+        $comic->delete();
+        return redirect()->route('comics.index');
     }
 }
