@@ -3,6 +3,13 @@
 
 @section('main-content')
      <!--LISTA FUMETTI -->
+
+    @if (session('success'))
+        <div class="alert alert-success">
+           {{session('success')}}
+        </div>
+    @endif
+
      <div class="pt-4">
         <div class="pb-3">
             <a class="btn btn-success w-100" href="{{route('comics.create')}}">Create Comic</a>
