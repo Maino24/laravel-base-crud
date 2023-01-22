@@ -2,5 +2,13 @@
 @section('page-title', 'Comics-Home')
 
 @section('main-content')
-    <h1> SHOW PAGE </h1>
+    <div class="mainShow d-flex p-4">
+        <div class="pe-3">
+            <h1>{{$comic->title}}</h1>
+            <p>{{$comic->description}}</p>
+        </div>
+        <div>
+            <img src="{{$comic->thumb}}" alt="">
+        </div>
+    </div>
 @endsection

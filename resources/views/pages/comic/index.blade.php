@@ -32,13 +32,16 @@
                 <td>{{$elem->series}}</td>
                 <td>{{$elem->sale_date}}</td>
                 <td>{{$elem->type}}</td>
+              <td>
 
+                <a href="{{route('comics.show', $elem->id)}}">
+                <p>INFO</p>
+                </a>
+              </td>
 
             </tr>
 
-
             @endforeach
-
 
         </tbody>
       </table>
