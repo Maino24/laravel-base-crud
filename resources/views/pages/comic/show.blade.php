@@ -5,7 +5,7 @@
     <div class="mainShow d-flex p-4">
         <div class="pe-3">
             <h1>{{$comic->title}}</h1>
-            <p>{{$comic->description}}</p>
+            <p>{{!!$comic->description!!}}</p>
         </div>
         <div>
             <img src="{{$comic->thumb}}" alt="">

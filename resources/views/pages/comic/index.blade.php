@@ -3,46 +3,50 @@
 
 @section('main-content')
      <!--LISTA FUMETTI -->
+     <div class="pt-4">
+        <div class="pb-3">
+            <a class="btn btn-success w-100" href="{{route('comics.create')}}">Create Comic</a>
+        </div>
 
-
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#id</th>
-            <th scope="col">title</th>
-            <th scope="col">description</th>
-            <th scope="col">thumb</th>
-            <th scope="col">price</th>
-            <th scope="col">series</th>
-            <th scope="col">sale_date</th>
-            <th scope="col">type</th>
-            <th scope="col">Actions</th>
-          </tr>
-        </thead>
-
-        <tbody>
-            @foreach ($comics as $elem)
+        <table class="table">
+            <thead>
             <tr>
-
-                <td>{{$elem->id}}</td>
-                <td>{{$elem->title}}</td>
-                <td>{{$elem->description}}</td>
-                <td><img src="{{$elem->thumb}}" alt=""></td>
-                <td>{{$elem->price}}</td>
-                <td>{{$elem->series}}</td>
-                <td>{{$elem->sale_date}}</td>
-                <td>{{$elem->type}}</td>
-              <td>
-
-                <a href="{{route('comics.show', $elem->id)}}">
-                <p>INFO</p>
-                </a>
-              </td>
-
+                <th scope="col">#id</th>
+                <th scope="col">title</th>
+                <th scope="col">description</th>
+                <th scope="col">thumb</th>
+                <th scope="col">price</th>
+                <th scope="col">series</th>
+                <th scope="col">sale_date</th>
+                <th scope="col">type</th>
+                <th scope="col">Actions</th>
             </tr>
+            </thead>
 
-            @endforeach
+            <tbody>
+                @foreach ($comics as $elem)
+                <tr>
 
-        </tbody>
-      </table>
+                    <td>{{$elem->id}}</td>
+                    <td>{{$elem->title}}</td>
+                    <td>{{$elem->description}}</td>
+                    <td><img src="{{$elem->thumb}}" alt=""></td>
+                    <td>{{$elem->price}}</td>
+                    <td>{{$elem->series}}</td>
+                    <td>{{$elem->sale_date}}</td>
+                    <td>{{$elem->type}}</td>
+                <td>
+
+                    <a href="{{route('comics.show', $elem->id)}}">
+                    <p>INFO</p>
+                    </a>
+                </td>
+
+                </tr>
+
+                @endforeach
+
+            </tbody>
+        </table>
+    </div>
 @endsection
