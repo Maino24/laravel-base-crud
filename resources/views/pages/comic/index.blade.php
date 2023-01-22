@@ -2,7 +2,9 @@
 @section('page-title', 'Comics-Home')
 
 @section('main-content')
-    <h1> LISTA FUMETTI </h1>
+     <!--LISTA FUMETTI -->
+
+
     <table class="table">
         <thead>
           <tr>
@@ -30,9 +32,11 @@
                 <td>{{$elem->series}}</td>
                 <td>{{$elem->sale_date}}</td>
                 <td>{{$elem->type}}</td>
-                <td></td>
 
-              </tr>
+
+            </tr>
+
+
             @endforeach
 
 
